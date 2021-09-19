@@ -1,0 +1,24 @@
+update file of maps
+
+map			date			global, slice, volcano
+
+large earthquakes	18 sept 21		global
+mantle core boundary	18 sept 21		global
+major eq since 1973	18 sept 21		global
+major deeper 200km	18 sept 21		global
+deeper than 400km	18 sept 21		global
+1900-1973		18 sept 21		global
+volcanoes sm eq matrix	18 sept 21		global
+
+
+e. indonesia since 1973	18 sept	21		slice
+japan since 2010	18 sept 21		slice
+north caribbean		18 sept 21		slice
+italy aegean since 1973	18 sept 21		slice
+african and indian MORB	18 sept 21		slice
+timor			19 sept 21		regional
+south america		19 sept 21		regional
+hemalayas		19 sept 21		regional
+
+stromboli		19 sept 21		volcano
+

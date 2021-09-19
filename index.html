@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<body>
+<body style="background-color:powderblue;">
+<h1>Welcome to Visualizations of Earthquakes and Volcanoes</h1>
+<!img src="./etnastromboli.png" style="float:right;width:300px;height:200px;">
+      <img src="./stromboli.png" style="float:right;width:320px;height:200px;"> 
+<p> These 3-dimensional, interactive maps are visualizations of <a href="https://earthquake.usgs.gov/earthquakes/search/">USGS</a> earthquake data files, they are not models.  Raluca Nicola created a visualization for <a href="https://ralucanicola.github.io/earthquakes-viz/">earthquakes</a> which creates a 3 dimensional map of earthquakes on Earth's globe. The visualizations can be adapted to visualize the entire globe or any region of the Earth using any .csv file from the USGS database. The orange lines represent the boundaries of the tectonic plates. Earthquake data from
+        <a href="https://earthquake.usgs.gov/earthquakes/search/">USGS</a>.
+        <a href="https://www.arcgis.com/home/item.html?id=2b93b06dc0dc4e809d3c8db5cb96ba69"
+          >Country borders feature service</a>
+        is made available by the <a href="https://livingatlas.arcgis.com/en/">Living Atlas</a>. Visualization created
+        with <a href="https://developers.arcgis.com/javascript">Esri's ArcGIS API for JavaScript</a>.</p>
+<div id="details">
+      <div id="legend">
+        Earthquakes are marked by yellow or green spheres, and red spheres for larger earthquakes. Maps with volcanoes also have red spheres at the surface representing the volcanoes, there is one map including the mantle core boundary outlined by white spheres. Depending on the density of earthquakes of each individual visualization, the color and size of spheres are interpolated. The visualizations are limited by the USGS to less than 20,000 earthquakes. For regional earthquake maps the earthquakes may not be initially evident because the region visualized is on the other side of the Earth globe. Once the globe starts to revolve it indicates that the earthquake data has been loaded and you can turn to the region listed in the title. 
+
+The toggle button initially exaggerates the Earthquake depth by a factor of 6. This can act like a magnifying glass or it can be distracting and can be disabled to visualize the earthquakes in their exact location in the Earth's globe. 
+<hr>
+<h3>Global Earthquake maps</h3>
+ <style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<!table>
+<table style="width:100%">
+   <tr> 
+    <td><img src="./mantle core boundary.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/mantle-core-boundary/">Earthquakes, volcanoes with mantle core boundary</a></td>
+    <td>A global visualization of magnitude 5 earthquakes with volcanoes marked on the surface. The mantle core boundary is visualized within the Earth highlighting that the mantle comprises 84% of the volume of Earth's sphere.</td>
+  </tr>
+  <tr>
+    <td><img src="./major eq 1973.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/earthquakes-viz/">Major earthquakes since 1973</a></td>
+    <td>All global major earthquakes greater than 5.6 magnitude since 1973, the year the USGS reports that all earthquakes greater than 4.5 were collected and catalogued.</td>
+  </tr>
+  <tr>
+    <td><img src="./eq 400km.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/deeper-than-400km/">Global quakes deeper than 400km since 1973</a></td>
+    <td>In theory these earthquakes should not exist because the descending seafloor is less dense than the mantle at this depth</td>
+  </tr>
+<tr>
+    <td><img src="./12 large.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/largest_earthquakes/">12 large earthquakes</a></td>
+    <td>A compilation of 12 large earthquakes with fore and after shocks in different regions and from different times on the same visualization, including the Great Sumatran and Tohoku earthquakes</td>
+  </tr>
+<tr>
+    <td><img src="./1900-1973ss.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/1900-to-1973/">USGS complete earthquake archive 1900 - 1973.</a></td>
+    <td>The complete historical earthquake USGS archive 1900 to 1973 cataloguing all quakes before the 1973</td>
+  </tr>
+<tr>
+    <td><img src="./mag5 matrix.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/volcanoes-and-small-earthquakes/">Magnitude 5 earthquakes deeper than 50km with volcanoes marked on the surface.</a></td>
+    <td>A visualization contrasting earthquakes with volcanoes, illustrating how few volcanoes evolve from earthquakes and descending seafloor.</td>
+  </tr>
+</table> 
+<hr>
+<h3>Regional Earthquake Maps</h3>
+<table>
+ <tr>
+    <td><img src="./indonesia.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/indonesia/">Earthquakes under East Indonesia</a></td>
+    <td>A visualization illustrating seafloor descending from 4 different directions under East Indonesia</td>
+  </tr>
+<tr>
+    <td><img src="./japan 10yrs.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/japan-with-volcanoes-2010/">10 years of earthquakes under Japan including the Great Tohoku earthquake in 2011</a></td>
+    <td>A visualization illustrating the high density of earthquakes under Japan as the Great Tohoku earthquake is buried within</td>
+  </tr>
+<tr>
+    <td><img src="./totalcarib.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/totalcarib/">Earthquakes under the Caribbean basin since 1973</a></td>
+    <td>A visualization capturing the entire Caribbean basin history of earthquakes since 1973</td>
+  </tr>
+<tr>
+    <td><img src="./samerica.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/south_america/">Earthquakes deeper than 50km under South America since 1973</a></td>
+    <td>A visualization clearly showing the low viscosity zone, the absence of earthquakes, along with very large and deep earthquakes</td>
+  </tr>
+<tr>
+    <td><img src="./newtimor.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/timor/">Earthquakes under Timor and Philippines since 1973</a></td>
+    <td>Another visualization showing the low viscosity zone with many large earthquakes deeper than 400km</td>
+  </tr>
+<tr>
+    <td><img src="./himalayas.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/himilayas_iceland/">Earthquakes under Himalaya mountains and Iceland since 1973</a></td>
+    <td>A visualization that does not show clearly a low viscosity zone under the Himalayan mountains, nor do any earthquakes occur deeper than 400km</td>
+  </tr>
+</table>
+<hr>
+<h3>Earthquakes under volcanoes</h3>
+
+<table style="width:100%">
+   <tr> 
+    <td><img src="./stromboli.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/stromboli/">Earthquakes under Etna and Stromboli volcanoes Sicily, Italy</a></td>
+    <td>A beautiful visualization of earthquakes feeding Etna and Stromboli volcanoes in Sicily, Italy with ascending melt from the African plate descending under Europe</td>
+  </tr>
+  <tr>
+    <td><img src="./pinatubo.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/luzon/">Earthquakes under Mt Pinatubo and Mt Ta'al Luzon, Philippines</a></td>
+    <td>While not as dramatic as with Stromboli, this visualization shows ascending melt feeding the separate volcanoes. Also a curious clustering of earthquakes at 10,33 and 100km depth</td>
+  </tr>
+  <tr>
+    <td><img src="./soputan.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/soputan/">Earthquakes under Mt Soputan and Mt Lugan-Empung volcanoes, Indonesia</a></td>
+    <td>A visualization with the descending seafloor melt ascending to feed the Soputan and Lukan-Empung volcanoes in Indonesia, more artifact at the 33km depth</td>
+  </tr>
+<tr>
+    <td><img src="./sabancaya.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/sabancaya/">Earthquakes under Sabancaya volcano, Chile</a></td>
+    <td>A visualization of earthquakes under Sabancaya volcano showing the descending Nazca plate beneath the South American plate feeding the volcano</td>
+  </tr>
+<tr>
+    <td><img src="./pacaya.png"style="width:136px;height:60px;"></td>
+    <td><a href="https://ptrhaney.github.io/pacaya/">Earthquakes under Pacaya volcano, Guatemala</a></td>
+    <td>A visualization showing the Pacific plate descending under the North American plate with ascending melt feeding the Pacaya volcano, Guatemala</td>
+  </tr>
+
+</table> 
+
+<hr> 
+<p>On why these pretty maps are interesting.... </p>
+
+
+      </div>      
+<h4>Address and Contact information </h4>
+
+<address>
+All visualizations were created by <a href="https://www.emailmeform.com/builder/form/22Pl636B0cL" style="color:DodgerBlue;">Earthquake viz Contact Form</a><br> 
+Venezia, Italia<br>
+Last updated<br>
+19 September 2021<br>
+</address>                  
+</body>
+</html>
+
+          
+
+<script src="https://www.emailmeform.com/builder/forms/jsform/22Pl636B0cL" type="text/javascript"></script>
+<div style="margin-top:18px;text-align:center"><div id='emf_advertisement'><font face="Verdana" size="2" color="#000000">Powered by</font><span style="position: relative; padding-left: 3px; bottom: -5px;"><img src="//assets.emailmeform.com/images/footer-logo.png?bWFzdGVy" /></span><font face="Verdana" size="2" color="#000000">EMF </font><a style="text-decoration:none;" href="https://www.emailmeform.com/" target="_blank"><font face="Verdana" size="2" color="#000000">Online Form Builder</font></a></div></div>
